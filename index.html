@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><Liquor class="com"></Liquor></title>
+    <link rel="stylesheet" href="https://fontawesome.com/icons/champagne-glasses?s=solid">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- header section -->
+  <header>
+      <a href="#" class="logo"><img src="images/li.png" height="80" style="margin-top: 15px;" ></i>Liquor.com</a>
+      <div id="menu-bar" class="fas fa-bars"></div>
+      <nav class="navbar">
+          <a href="#Home">Home</a>
+          <a href="#Menu">Menu</a>
+          <a href="#Most popular">Popular</a>
+          <a href="#Gallery">Gallery</a>
+          <a href="#review">Review</a>
+          <a href="#order">Order</a>
+      </nav>
+  </header>
+
+  <!-- Home  -->
+
+  <section class="home" id="home">
+    <div class="content">
+   <h3>Drink the FIRST,<br>
+            Sip the SECOND slowly,<br>
+            Continue the THIRD.</h3>
+        <a href="#" class="btn">order Now</a>
+    </div>
+
+    <div class="image" >
+        <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/barman-equipment-such-as-measuring-cups-and-essence-royalty-free-image-1062066858-1557252311.jpg" >
+    </div>
+  </section>
+
+  <!-- Speciality -->
+
+  
+  <section class="speciality" id="speciality">
+    <h1 class="heading">our <span>Menu</span></h1>
+    <div class="box-container"> 
+        <div class="box">
+            <img class="image" src="https://economictimes.indiatimes.com/thumb/msid-88043334,width-1200,height-900,resizemode-4,imgsize-29032/red-wine.jpg?from=mdr" >
+            <div class="content">
+           
+                <h3>Wine</h3>
+                <p>Alcoholic drink typically made from fermented grapes</p>
+            </div>
+        </div>
+
+        <div class="box">
+          <img class="image" src="data:image/jpeg;base64,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" >
+          <div class="content">
+              <h3>Beer</h3>
+              <p> An alcoholic beverage produced by extracting raw materials with water, boiling </p>
+          </div>
+      </div>
+
+      <div class="box">
+          <img class="image" src="https://cdn.shopify.com/s/files/1/0535/0509/7878/products/36_1280x.jpg?v=1632772407" >
+          <div class="content">
+              <h3>Vodka</h3>
+              <p>distilled liquor, clear and colourless and without definite aroma or taste, ranging in alcoholic content from about 40 to 55 percent.
+            </p>
+          </div>
+      </div>
+      <div class="box">
+          <img class="image" src="https://www.thetaste.ie/wp-content/uploads/2017/06/best_sipping_rum_700x400.jpg" >
+          <div class="content">
+              <h3>Rum</h3>
+              <p>A liquor made by fermenting and then distilling sugarcane molasses or sugarcane juice</p>
+          </div>
+      </div>
+
+      <div class="box">
+          <img class="image" src="https://cdn.britannica.com/71/192771-050-CEF9CEC3/Glass-scotch-whiskey-ice.jpg?q=60" >
+          <div class="content">
+              <h3>Whisky</h3>
+              <p>An amber-colored distilled spirit made out of fermented grain</p>
+          </div>
+      </div>
+
+      <div class="box">
+          <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkz7RacI6sS7Lk5QhGMECDpl5WIkdRDe5n_7v_0AKAu3zMACH3Ged7bv_J7zG5kytm3Yw&usqp=CAU" >
+          <div class="content">
+              <h3>Mojito</h3>
+              <p>The epitome of the refreshing cocktail, stripped down to just the bare essentials of rum, lime juice, sugar, soda water, and mint</p>
+          </div>
+      </div>
+    </div>
+</section>
+
+  <!-- popular -->
+
+  <section class="popular" id="popular">
+    <h1 class="heading">most <span>popular drinks</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="https://www.bigbasket.com/media/uploads/p/xxl/40198587_3-sula-wines-vineyards-chenin-blanc-reserve-white-wine.jpg" alt="">
+            <span class="price">Rs.570</span>
+            <h3>Sula Chenin Blance (White Rum)</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn" >Order Now</a>
+        </div>
+
+        <div class="box">
+            <img src="https://www.bigbasket.com/media/uploads/p/xxl/40199555_3-kingfisher-ultra-lager-beer.jpg" alt="">
+            <span class="price">Rs.160</span>
+            <h3>Kingfisher</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-s tar"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn" >Order Now</a>
+        </div>
+
+        <div class="box">
+            <img src="https://www.bigbasket.com/media/uploads/p/xxl/40199513_3-magic-moments-pure-grain-vodka.jpg" alt="">
+            <span class="price">Rs.620</span>
+            <h3>Magic Moments</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn" >Order Now</a>
+        </div>
+
+        <div class="box">
+            <img src="https://www.bigbasket.com/media/uploads/p/xxl/40199108_3-bacardi-limon-original-citrus-rum.jpg" alt="">
+            <span class="price">Rs.1720</span>
+            <h3>Bacardi</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn" >Order Now</a>
+        </div>
+
+        <div class="box">
+            <img src="https://cdn2.bigcommerce.com/server5500/tpbc2s65/products/2267/images/9185/teachers750__06892.1516134581.1280.1280.jpg?c=2" alt="">
+            <span class="price">Rs.1790</span>
+            <h3>Teachers</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn" >Order Now</a>
+        </div>
+
+        <div class="box">
+            <img src="https://www.bigbasket.com/media/uploads/p/xxl/40199168_3-black-dog-centenary-black-reserve-aged-rare-blended-scotch-whisky.jpg" alt="">
+            <span class="price">Rs.1720</span>
+            <h3>Black Dog</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn" >Order Now</a>
+        </div>
+    </div>
+  </section>
+
+  <!-- popular -->
+  <section class="steps" >
+      <div class="box">
+        <img src="images/step-1.jpg" height="150" width="150" alt="">
+        <h3>choose your favourite drink</h3>
+      </div>
+      <div class="box">
+        <img src="images/step-2.jpg" height="150" width="150" alt="">
+        <h3>Free and Fast delivery</h3>
+      </div>
+      <div class="box">
+        <img src="images/step-3.jpg" height="150" width="150" alt="">
+        <h3>Easy payments method</h3>
+      </div>
+      <div class="box">
+        <img src="images/step-4.jpg " height="150" width="150" alt="">
+        <h3>and finally, enjoy your drink</h3>
+      </div>
+  </section>
+
+<!-- Gallery -->
+
+<section class="gallery" id="gallery">
+    <h1 class="heading">our <span>Drink Gallery</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/6c017fef-68d2-4dc2-b24b-3ed2dea2e48a_425x425.jpg" alt="">
+            <div class="content">
+            <h3>Zampa Chene Grande Reserve (Red Wine)</h3>      
+            <a href="#" class="btn" >Order Now</a>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="https://www.bigbasket.com/media/uploads/p/xxl/40198587_3-sula-wines-vineyards-chenin-blanc-reserve-white-wine.jpg" alt="">
+        <div class="content">
+        <h3>Sula Chenin Blane (White Wine)</h3>
+        <!-- <p>Lorem ipsum do</p>       -->
+        <a href="#" class="btn" >Order Now</a>
+    </div>
+</div>
+
+<div class="box">
+    <img src="https://admin.livingliquidz.com/ImagesUpload/NewProject(6)20221804367.jpg" alt="">
+    <div class="content">
+    <h3>Fratelli Cabernet Franc Shiraz</h3>
+    <!-- <p>Lorem ipsum do</p>       -->
+    <a href="#" class="btn" >Order Now</a>
+</div>
+</div>
+
+<div class="box">
+    <img src="https://www.bigbasket.com/media/uploads/p/xxl/40199555_3-kingfisher-ultra-lager-beer.jpg" alt="">
+    <div class="content">
+    <h3>Kingfisher</h3>
+    <!-- <p>Lorem ipsum do</p>       -->
+    <a href="#" class="btn" >Order Now</a>
+</div>
+</div>
+
+<div class="box">
+    <img src="https://www.bigbasket.com/media/uploads/p/xxl/40201222_3-budweiser-premium-beer.jpg" alt="">
+    <div class="content">
+    <h3>Budweiser</h3>
+    <!-- <p>Lorem ipsum do</p>       -->
+    <a href="#" class="btn" >Order Now</a>
+</div>
+</div>
+
+<div class="box">
+    <img src="https://tallidrinksapp.com/wp-content/uploads/2021/11/Adobe_Post_20211111_1602040.3840684414034532.png" alt="">
+    <div class="content">
+    <h3>Corona</h3>
+    <!-- <p>Lorem ipsum d?</p>       -->
+    <a href="#" class="btn" >Order Now</a>
+</div>
+</div>
+
+<div class="box">
+    <img src="http://tomswinegoa.com/wp-content/uploads/2020/01/birablonde.jpg" alt="">
+    <div class="content">
+    <h3>Heineken</h3>
+    <!-- <p>Lorem ipsum do</p>       -->
+    <a href="#" class="btn" >Order Now</a>
+</div>
+</div>
+
+<div class="box">
+    <img src="https://www.bigbasket.com/media/uploads/p/xxl/40199513_3-magic-moments-pure-grain-vodka.jpg" alt="">
+    <div class="content">
+    <h3>Magic Moments</h3>
+    <!-- <p>Lorem ipsum do</p>       -->
+    <a href="#" class="btn" >Order Now</a>
+</div>
+</div>
+
+<div class="box">
+    <img src="https://www.bigbasket.com/media/uploads/p/xxl/40199203_3-smirnoff-green-apple-vodka.jpg" alt="">
+    <div class="content">
+    <h3>Smirnoff</h3>
+    <!-- <p>Lorem ipsum do</p>       -->
+    <a href="#" class="btn" >Order Now</a>
+</div>
+</div>
+
+<div class="box">
+    <img src="https://www.absolut.com/globalassets/images/products/absolut-vodka/atlas/ingredient_absolut-vodka_1000ml_us_packshot.jpg" alt="">
+    <div class="content">
+    <h3>Absolut</h3>
+    <!-- <p>Lorem ipsum do</p>       -->
+    <a href="#" class="btn" >Order Now</a>
+</div>
+</div>
+
+<div class="box">
+    <img src="https://www.bigbasket.com/media/uploads/p/xxl/40199132_3-grey-goose-vodka.jpg" alt="">
+    <div class="content">
+    <h3>Grey Goose</h3>
+    <!-- <p>Lorem ipsum do</p>       -->
+    <a href="#" class="btn" >Order Now</a>
+</div>
+</div>
+
+<div class="box">
+    <img src="https://www.bigbasket.com/media/uploads/p/xxl/40199168_3-black-dog-centenary-black-reserve-aged-rare-blended-scotch-whisky.jpg" alt="">
+    <div class="content">
+    <h3>Black Dog</h3>
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nesciunt maiores eveniet qui aperiam, nulla mollitia ex ipsa hic? Nesciunt magnam temporibus dolor, aspernatur enim autem voluptate consectetur minus quasi?</p>       -->
+    <a href="#" class="btn" >Order Now</a>
+</div>
+</div>
+
+<div class="box">
+    <img src="https://img.shoplineapp.com/media/image_clips/5f7da63ef1fc420011dd4b43/original.jpg?1602070078" alt="">
+    <div class="content">
+    <h3>100 Pipers</h3>
+    <!-- <p>Lorem ipsum do</p>       -->
+    <a href="#" class="btn" >Order Now</a>
+</div>
+</div>
+
+<div class="box">
+    <img src="https://img.thewhiskyexchange.com/900/irish_jam1.jpg" alt="">
+    <div class="content">
+    <h3>Jameson irish</h3>
+    <!-- <p>Lorem ipsum do</p>       -->
+    <a href="#" class="btn" >Order Now</a>
+</div>
+</div>
+
+<div class="box">
+    <img src="https://cdn2.bigcommerce.com/server5500/tpbc2s65/products/2267/images/9185/teachers750__06892.1516134581.1280.1280.jpg?c=2" alt="">
+    <div class="content">
+    <h3>Teachers Blended Scotch</h3>
+    <!-- <p>Lorem ipsum do</p>       -->
+    <a href="#" class="btn" >Order Now</a>
+</div>
+</div>
+
+<div class="box">
+    <img src="https://www.thespruceeats.com/thmb/xbVSa6YlUzyeN68lqzEskCQG-VU=/2000x2000/smart/filters:no_upscale()/mojito-cocktail-recipe-759319-hero-01-662400394a744a7fb1f01196ce60c05c.jpg" alt="">
+    <div class="content">
+    <h3>Classic Mojito</h3>
+    <!-- <p>We didn't invent it; we simply perfected it. DonQ Cristal Rum, lime, mint, sugar, muddled and shaken with a splash of soda</p>       -->
+    <a href="#" class="btn" >Order Now</a>
+</div>
+</div>
+
+<div class="box">
+    <img src="https://www.thespruceeats.com/thmb/vCPvz7NgHskTM0TJ46iPjBFJcMU=/4000x2667/filters:fill(auto,1)/mango-mojito-recipe-5197855-hero-01-8a9be17c165242c39b2cb88d401d266f.jpg" alt="">
+    <div class="content">
+    <h3>Mango Mojito</h3>
+    <!-- <p>Dong Cristal Rum, coconut cream, lime, sugar, fresh mint, muddled and shaken with a splash of soda</p>       -->
+    <a href="#" class="btn" >Order Now</a>
+</div>
+</div>
+
+<div class="box">
+    <img src="data:image/jpeg;base64,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" alt="">
+    <div class="content">
+    <h3>Passion Fruit Mojito</h3>
+    <!-- <p>passion fruit, lime, sugar, fresh mint, muddled and shaken with a splash of soda</p>       -->
+    <a href="#" class="btn" >Order Now</a>
+</div>
+</div>
+
+</div>
+
+</section>
+  
+<!-- review -->
+
+<section class="review" id="review">
+    <h1 class="heading">our customer <span>reviews</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="images/pic-1.png" alt="">
+            <h3>Aggarwal</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati repudiandae excepturi corrupti voluptatem cumque, soluta ab perferendis sunt vitae laborum, distinctio laboriosam et temporibus id totam omnis? Eos, deleniti explicabo.</p>
+        </div>
+
+        <div class="box">
+            <img src="images/pic-2.png" alt="">
+            <h3>Ashwini</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati repudiandae excepturi corrupti voluptatem cumque, soluta ab perferendis sunt vitae laborum, distinctio laboriosam et temporibus id totam omnis? Eos, deleniti explicabo.</p>
+        </div>
+
+        <div class="box">
+            <img src="images/pic-3.png" alt="">
+            <h3>Rohith</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati repudiandae excepturi corrupti voluptatem cumque, soluta ab perferendis sunt vitae laborum, distinctio laboriosam et temporibus id totam omnis? Eos, deleniti explicabo.</p>
+        </div>
+    </div>
+</section>
+<!-- footer -->
+<section class="footer">
+
+    <div class="share">
+        <i class="fas fa-twitter"></i>
+        <a href="#" class="btn">facebook</a>
+        <a href="#" class="btn">twitter</a>
+        <a href="#" class="btn">instagram</a>
+        <a href="#" class="btn">linkedin</a>
+    </div>
+
+    <h1 class="credit"> created by <span> Shivani Gitti </span> | all rights reserved! </h1>
+
+</section>
+
+<!-- scroll top button  -->
+<a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
+
+<!-- loader  -->
+<div class="loader-container">
+    <img src="images/loader.gif" alt="">
+</div>
+
+
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
